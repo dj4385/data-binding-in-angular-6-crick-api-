@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <div class="card border border-success">
+      <div class="card-header broder border-bottom-2">
+        <i class="fa fa-mobile" aria-hidden="true"></i> Match Detail
+      </div>
+      <div class="card-body">
+        <div class="jumbotron" *ngFor="let m of _match">
+          <p>Teams: {{ m["team-1"] }} Vs {{ m["team-2"] }} </p>
+          <p>Match Date: {{ m.date }}</p>
+          <p>Match Type: {{ m.type }}</p>
+          <p>Toss Win: {{ m.toss_winner_team }}</p>
+          <p>Winner Team: {{ m.winner_team }}</p>
+        </div>
+      </div> 
+    </div>
+</div>
