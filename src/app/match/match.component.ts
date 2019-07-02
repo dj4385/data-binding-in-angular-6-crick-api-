@@ -28,7 +28,6 @@ export class MatchComponent implements OnInit {
           //console.log("MatchDetail",this.matchDetail)
           console.log("MatchDetail innerdata",this.matchDetail.matches[0]["team-1"])
 
-          alert(this.matchDetail.matches.date);
         },
         err => {
           alert(err)
