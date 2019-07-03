@@ -9,6 +9,7 @@ import { PlayerDetailComponent } from './player-detail/player-detail.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { ApiUrlsService } from './api-urls.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     AppRoutingModule
   ],
   providers: [
-    CricService
+    CricService,
+    ApiUrlsService
   ],
   bootstrap: [AppComponent]
 })

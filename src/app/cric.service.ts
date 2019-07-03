@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { ApiUrlsService } from './api-urls.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CricService {
 
-  private url = "https://cricapi.com/api/matches?apikey=w1jTrBs32FM0LbnA79xSBr9QJkP2";
+  private url = this._apiUrl.cricUrls.matchUrl;
   constructor(
-    private _httpClient : HttpClient
+    private _httpClient : HttpClient,
+    private _apiUrl: ApiUrlsService
   ) { }
 
   getMatchDetails(){
