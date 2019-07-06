@@ -11,6 +11,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ApiUrlsService } from './api-urls.service';
+import { MatchCalComponent } from './match-cal/match-cal.component';
+import { CalSerService } from './match-cal/cal-ser.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { ApiUrlsService } from './api-urls.service';
     MatchComponent,
     PlayerDetailComponent,
     NavbarComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    MatchCalComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { ApiUrlsService } from './api-urls.service';
   ],
   providers: [
     CricService,
-    ApiUrlsService
+    ApiUrlsService,
+    CalSerService
   ],
   bootstrap: [AppComponent]
 })
