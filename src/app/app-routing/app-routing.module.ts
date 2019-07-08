@@ -5,6 +5,7 @@ import { MatchComponent } from '../match/match.component';
 import { PlayerDetailComponent } from '../player-detail/player-detail.component';
 import { NotfoundComponent } from '../notfound/notfound.component';
 import { MatchCalComponent } from '../match-cal/match-cal.component';
+import { OldMatchComponent } from '../old-match/old-match.component';
 
 const appRoute: Routes = [
   {
@@ -18,6 +19,10 @@ const appRoute: Routes = [
   {
     path: 'matchDates',
     component: MatchCalComponent
+  },
+  {
+    path: 'oldMatch',
+    component: OldMatchComponent
   },
   {
     path: '',

@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ApiUrlsService } from './api-urls.service';
+import { OldMatchServService } from './old-match-serv.service';
 
-describe('ApiUrlsService', () => {
+describe('OldMatchServService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: ApiUrlsService = TestBed.get(ApiUrlsService);
+    const service: OldMatchServService = TestBed.get(OldMatchServService);
     expect(service).toBeTruthy();
   });
 });

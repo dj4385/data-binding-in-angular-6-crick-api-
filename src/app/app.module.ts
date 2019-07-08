@@ -13,6 +13,9 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { ApiUrlsService } from './api-urls.service';
 import { MatchCalComponent } from './match-cal/match-cal.component';
 import { CalSerService } from './match-cal/cal-ser.service';
+import { OldMatchComponent } from './old-match/old-match.component';
+import { OldMatchServService } from './old-match/old-match-serv.service';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { CalSerService } from './match-cal/cal-ser.service';
     PlayerDetailComponent,
     NavbarComponent,
     NotfoundComponent,
-    MatchCalComponent
+    MatchCalComponent,
+    OldMatchComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import { CalSerService } from './match-cal/cal-ser.service';
   providers: [
     CricService,
     ApiUrlsService,
-    CalSerService
+    CalSerService,
+    OldMatchServService
   ],
   bootstrap: [AppComponent]
 })
