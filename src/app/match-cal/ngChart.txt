@@ -1,0 +1,4 @@
+How to implement chart in angular 6
+
+Step1: add npm in your app using this command :-
+        npm install chart.js --save

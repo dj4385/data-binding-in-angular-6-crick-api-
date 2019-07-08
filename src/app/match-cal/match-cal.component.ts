@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { CalSerService } from './cal-ser.service';
-import { ThrowStmt } from '@angular/compiler';
+
 
 @Component({
   selector: 'app-match-cal',
@@ -12,7 +11,8 @@ export class MatchCalComponent implements OnInit {
 
   matchDatesAPIData :any = {}
   matchDates : any = []
-
+  dates: any = []
+  team :any = []
   constructor(
     private _matchSer: CalSerService
   ) { }
@@ -27,8 +27,14 @@ export class MatchCalComponent implements OnInit {
         res => {
           this.matchDatesAPIData = res;
           this.matchDates = this.matchDatesAPIData.data;
+          
+          if(this.matchDates){
+            this.matchDates.forEach(element => {
+              this.dates.push(element.date);
+              this.team.push(element.name);
+            });
+          }
         }
       )
   }
-
 }
